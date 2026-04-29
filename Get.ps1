@@ -167,7 +167,7 @@ Expand-Archive "$env:TEMP/win11debloat.zip" "$env:TEMP/Win11Debloat"
 Remove-Item "$env:TEMP/win11debloat.zip"
 
 # Move files
-Get-ChildItem -Path "$env:TEMP/Win11Debloat/Raphire-Win11Debloat-*" -Recurse | Move-Item -Destination "$env:TEMP/Win11Debloat"
+Get-ChildItem -Path "$env:TEMP/Win11Debloat/jbreiter-doterra-Win11Debloat-*" -Recurse | Move-Item -Destination "$env:TEMP/Win11Debloat"
 
 # Add existing config files back to Config folder
 if (Test-Path "$backupDir") {
